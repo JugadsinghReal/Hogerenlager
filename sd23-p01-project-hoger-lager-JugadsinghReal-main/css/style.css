@@ -1,0 +1,308 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+header {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 45px;
+    color: aliceblue;
+    text-align: center;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 10px;
+}
+
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8%;
+}
+
+label {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1%;
+}
+
+/* image of dices down below*/
+.image1,
+.image2,
+.image3,
+.image4 {
+    width: 100px;
+    border-radius: 25px;
+    position: absolute;
+    border: 5px solid;
+}
+
+.image1 {
+    left: 500px;
+    top: 180px;
+}
+
+.image2 {
+    left: 650px;
+    top: 180px;
+}
+
+.image3 {
+    top: 180px;
+    right: 650px;
+}
+
+.image4 {
+    top: 180px;
+    right: 500px;
+}
+
+/* end of dice images*/
+
+/* buttons down below*/
+
+.rollbutton-1 {
+    position: absolute;
+    left: 40%;
+    top: 305px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(131, 45, 45);
+    border-color: white;
+    border-style: solid;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.rollbutton-1:hover {
+    background-color: rgb(200, 25, 25);
+    cursor: pointer;
+}
+
+.rollbutton-1:disabled {
+    opacity: 50%;
+    cursor: not-allowed;
+}
+
+.rollbutton-2 {
+    position: absolute;
+    right: 40%;
+    top: 305px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(131, 45, 45);
+    border-color: white;
+    border-style: solid;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.rollbutton-2:hover {
+    background-color: rgb(200, 25, 25);
+    cursor: pointer;
+}
+
+.rollbutton-2:disabled {
+    opacity: 50%;
+    cursor: not-allowed;
+}
+
+.rollbutton-3 {
+    position: absolute;
+    left: 29%;
+    top: 305px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(90, 84, 159);
+    border-color: white;
+    border-style: solid;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.rollbutton-3:hover {
+    background-color: rgb(50, 50, 220);
+    cursor: pointer;
+}
+
+.rollbutton-3:disabled {
+    opacity: 50%;
+    cursor: not-allowed;
+}
+
+.rollbutton-4 {
+    position: absolute;
+    right: 29%;
+    top: 305px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(90, 84, 159);
+    border-color: white;
+    border-style: solid;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.rollbutton-4:hover {
+    background-color: rgb(50, 50, 220);
+    cursor: pointer;
+}
+
+.rollbutton-4:disabled {
+    opacity: 50%;
+    cursor: not-allowed;
+}
+
+/* end of buttons*/
+
+.player {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    top: 70px;
+    left: 605px;
+    font-size: 20px;
+    color: white;
+}
+
+.com {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    top: 70px;
+    right: 590px;
+    font-size: 20px;
+    color: white;
+}
+
+.whowon {
+    font-size: 30px;
+    position: relative;
+    top: 150px;
+    text-align: center;
+}
+
+.p-scores {
+    position: absolute;
+    left: 580px;
+    top: 150px;
+    color: white;
+}
+
+.p-credits {
+    position: absolute;
+    left: 685px;
+    top: 150px;
+    color: white;
+}
+
+.c-scores {
+    position: absolute;
+    top: 150px;
+    right: 670px;
+    color: white;
+}
+
+.c-credits {
+    position: absolute;
+    top: 150px;
+    right: 560px;
+    color: white;
+}
+
+.p-scoreboard {
+    left: 540px;
+    top: 150px;
+    position: absolute;
+    color: white
+}
+
+.p-creditsboard {
+    position: absolute;
+    left: 635px;
+    top: 150px;
+    color: white;
+}
+
+.c-scoreboard{
+    position: absolute;
+    top: 150px;
+    right: 680px;
+    color: white;
+}
+
+.c-creditsboard{
+    position: absolute;
+    top: 150px;
+    right: 570px;
+    color: white;
+}
+
+.instructions {}
+
+html {
+    --s: 100px;
+    /* control the size */
+    --c1: #805261;
+    --c2: #67434F;
+
+    --_s: calc(2*var(--s)) calc(2*var(--s));
+    --_g: var(--_s) conic-gradient(at 40% 40%, #00000000 75%, var(--c1) 0);
+    --_p: var(--_s) conic-gradient(at 20% 20%, #00000000 75%, var(--c2) 0);
+    background:
+        calc(.9*var(--s)) calc(.9*var(--s))/var(--_p),
+        calc(-.1*var(--s)) calc(-.1*var(--s))/var(--_p),
+        calc(.7*var(--s)) calc(.7*var(--s))/var(--_g),
+        calc(-.3*var(--s)) calc(-.3*var(--s))/var(--_g),
+        conic-gradient(from 90deg at 25% 25%, var(--c2) 25%, var(--c1) 0) 0 0/var(--s) var(--s);
+    animation: m 10s infinite;
+}
+
+@keyframes m {
+    0% {
+        background-position:
+            calc(.9*var(--s)) calc(.9*var(--s)),
+            calc(-.1*var(--s)) calc(-.1*var(--s)),
+            calc(.7*var(--s)) calc(.7*var(--s)),
+            calc(-.3*var(--s)) calc(-.3*var(--s)), 0 0
+    }
+
+    25% {
+        background-position:
+            calc(1.9*var(--s)) calc(.9*var(--s)),
+            calc(-1.1*var(--s)) calc(-.1*var(--s)),
+            calc(1.7*var(--s)) calc(.7*var(--s)),
+            calc(-1.3*var(--s)) calc(-.3*var(--s)), 0 0
+    }
+
+    50% {
+        background-position:
+            calc(1.9*var(--s)) calc(-.1*var(--s)),
+            calc(-1.1*var(--s)) calc(.9*var(--s)),
+            calc(1.7*var(--s)) calc(-.3*var(--s)),
+            calc(-1.3*var(--s)) calc(.7*var(--s)), 0 0
+    }
+
+    75% {
+        background-position:
+            calc(2.9*var(--s)) calc(-.1*var(--s)),
+            calc(-2.1*var(--s)) calc(.9*var(--s)),
+            calc(2.7*var(--s)) calc(-.3*var(--s)),
+            calc(-2.3*var(--s)) calc(.7*var(--s)), 0 0
+    }
+
+    100% {
+        background-position:
+            calc(2.9*var(--s)) calc(-1.1*var(--s)),
+            calc(-2.1*var(--s)) calc(1.9*var(--s)),
+            calc(2.7*var(--s)) calc(-1.3*var(--s)),
+            calc(-2.3*var(--s)) calc(1.7*var(--s)), 0 0
+    }
+}
+
+.instructions {}
